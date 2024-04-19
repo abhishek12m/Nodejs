@@ -1,7 +1,7 @@
 const yargs=require('yargs');
 const notes=require('./notes');
 
-
+yargs.version('1.1.0');
 
 yargs.command({
     command:'add',
@@ -9,12 +9,12 @@ yargs.command({
     builder:{
         title:{
             description:"Note title",
-            demandOptions:true,
+            demandOption:true,
             type:'string'
         },
         body:{
             description:"Note body",
-            demandOptions:true,
+            demandOption:true,
             type:'string'
         }
     },
@@ -30,7 +30,7 @@ yargs.command({
     builder:{
         title:{
             description:"Note title",
-            demandOptions:true,
+            demandOption:true,
             type:'string'
         }
     },
@@ -53,7 +53,7 @@ yargs.command({
     builder:{
         title:{
             description:"Note title",
-            demandOptions:true,
+            demandOption:true,
             type:'string'
         }
     },
@@ -62,4 +62,4 @@ yargs.command({
     }
 })
 
-yargs.argv
+yargs.parse();

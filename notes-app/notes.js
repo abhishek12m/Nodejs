@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { title } = require('process');
+// const chalk=require('chalk');
 
 
 const addNote = (title, body) => {
