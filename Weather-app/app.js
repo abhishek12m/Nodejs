@@ -3,7 +3,14 @@
 // console.log(process.env.API_KEY)
 // const request=require('request');
 const geocode=require('./utils/geocode');
-const location='Bangalore';
+const forecast=require('./utils/forecast');
+const location=process.argv[2];
+// console.log(process.argv[2])
+if(!location){
+    console.log('Prvide the location -')
+    return;
+}
+const days=1;
 // const url=`http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${location}&aqi=no`;
 
 
@@ -26,3 +33,11 @@ geocode(location,(error,data)=>{
     }
     console.log(data);
 })
+forecast(location,days,(error,data)=>{
+    if(error){
+        console.log(error);
+        return;
+    }
+    console.log(data);
+})
+
