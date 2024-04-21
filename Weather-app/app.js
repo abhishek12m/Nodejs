@@ -7,8 +7,7 @@ const forecast=require('./utils/forecast');
 const location=process.argv[2];
 // console.log(process.argv[2])
 if(!location){
-    console.log('Prvide the location -')
-    return;
+    return console.log('Prvide the location -')
 }
 const days=1;
 // const url=`http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${location}&aqi=no`;
