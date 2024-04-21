@@ -18,4 +18,25 @@ const geocode=(location,callback)=>{
     })
 }
 
+
+// const axios=require('axios');
+
+// const geocode=(location,callback)=>{
+//     const url=`http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${location}&aqi=no`;
+
+//     axios.get(url).then(response=>{
+//         const data=response.data;
+//         callback(undefined,`${location}'s Latitude = ${data.location.lat} and Longitude = ${data.location.lon}.`);
+//     })
+//     .catch(error=>{
+//         // console.log(error.response.data)
+//         if(error.response.data){
+//             callback(error.response.data.error.message,undefined);
+//         }
+//         else{
+//             callback(`Unable to access the weather api ${error}`, undefined);
+//         }
+//     })
+// }
+
 module.exports=geocode;

@@ -33,11 +33,11 @@ geocode(location,(error,data)=>{
     }
     console.log(data);
 })
-forecast(location,days,(error,data)=>{
-    if(error){
-        console.log(error);
-        return;
-    }
-    console.log(data);
-})
+// forecast(location,days,(error,data)=>{
+//     if(error){
+//         console.log(error);
+//         return;
+//     }
+//     console.log(data);
+// })
 
