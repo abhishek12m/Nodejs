@@ -7,7 +7,7 @@ const forecast=require('./utils/forecast');
 const location=process.argv[2];
 // console.log(process.argv[2])
 if(!location){
-    return console.log('Prvide the location -')
+    return console.log('Provide the location -')
 }
 const days=1;
 // const url=`http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${location}&aqi=no`;
@@ -32,11 +32,10 @@ geocode(location,(error,data)=>{
     }
     console.log(data);
 })
-// forecast(location,days,(error,data)=>{
-//     if(error){
-//         console.log(error);
-//         return;
-//     }
-//     console.log(data);
-// })
-
+forecast(location,days,(error,data)=>{
+    if(error){
+        console.log(error);
+        return;
+    }
+    console.log(data);
+})
