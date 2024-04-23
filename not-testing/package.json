@@ -1,0 +1,25 @@
+{
+  "name": "not-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test:unit": "mocha test/unit",
+    "test:integration": "mocha test/integration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^9.2.2",
+    "supertest": "^6.3.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

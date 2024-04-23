@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-unit-testing",
+  "version": "1.0.0",
+  "description": "Node.js project for unit testing with Mocha and Chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
